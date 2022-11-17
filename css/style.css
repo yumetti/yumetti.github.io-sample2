@@ -1,0 +1,578 @@
+/* common  */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+span {
+  color: red;
+  transform: translate(120px, 50%);
+}
+/* header  */
+header {
+  position: fixed;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 6;
+  background-color: transparent;
+  transition: all .6s;
+  /* max-width: 480px; */
+  box-sizing: border-box;
+}
+header .fa {
+  color: white;
+  font-size: 30px;
+}
+header ul {
+  display: none;
+}
+header h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 26px;
+  color: white;
+}
+/* nav  */
+.bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 7;
+}
+.bg .fa {
+  color: aliceblue;
+  font-size: 40px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.bg ul {
+  display: block;
+  text-align: center;
+  padding-top: 40%;
+}
+.bg li {
+  padding-bottom: 30px;
+}
+.bg a {
+  color: white;
+  font-size: 30px;
+  font-family: 'Courgette', cursive;
+}
+/* first  */
+.first ul{
+  position: relative;
+}
+.first img {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+.first h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  font-size: 37px;
+  font-family: serif;
+}
+.first p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  font-size: 30px;
+  font-family: serif;
+  line-height: 1.8;
+}
+/* concept  */
+.concept {
+  padding: 700px 15px 0 15px;
+}
+.concept h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  padding: 80px 0 60px 0;
+  position: relative;
+}
+.concept h1::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 120px;
+  position: absolute;
+  top: 95px;
+  left: 160px;
+  background-color: #000;
+}
+.concept h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.concept p {
+  padding: 20px 0;
+  line-height: 1.6;
+}
+.txt img {
+  width: 100%;
+}
+.concept h3 {
+  text-align: right;
+  font-size: 40px;
+  padding: 30px 0;
+  color: rgba(0, 0, 0, .1);
+  font-family: serif;
+}
+/* works  */
+.works {
+  padding: 0 15px;
+  background-color: rgba(0, 0, 0, .5);
+  background-image: url(/Users/akimotoyumeki/Desktop/粉ーディング課題０２/img/works-bgi@2x.jpg);
+  mix-blend-mode: screen;
+}
+.works h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  padding: 80px 0 60px 0;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.works h1::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 120px;
+  position: absolute;
+  top: 95px;
+  right: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.pics {
+  width: 100%;
+}
+.pic {
+  margin-bottom: 30px;
+}
+.pic img {
+  width: 100%;
+}
+.pics p {
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 1.8;
+  border: 1px solid black;
+  border-top: none;
+  padding: 20px 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+}
+.works button {
+  font-family: serif;
+  font-size: 20px;
+  display: block;
+  background-color: #F7D43F;
+  border-radius: 40px;
+  margin: 0 auto;
+  border: none;
+  padding: 20px 100px;
+  margin-top: 70px;
+}
+.works h2 {
+  font-size: 40px;
+  font-family: serif;
+  color: rgba(0, 0, 0, .1);
+  letter-spacing: 1.5px;
+  padding: 50px 0;
+}
+/* service  */
+.service h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  padding: 80px 15px 60px 15px;
+  position: relative;
+  /* text-align: center; */
+  color: rgb(0, 0, 0);
+  
+}
+.service h1::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 120px;
+  position: absolute;
+  top: 95px;
+  left: 130px;
+  background-color: rgb(0, 0, 0);
+}
+.images img {
+  width: 100%;
+  transition: 1s;
+}
+.images img:hover {
+  filter: grayscale(10);
+}
+.image {
+  margin-bottom: 40px;
+  position: relative;
+}
+.image p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 37px;
+  font-family: 'Courgette', cursive;
+  transition: 1s;
+}
+.service h2 {
+  font-size: 40px;
+  font-family: serif;
+  color: rgba(0, 0, 0, .1);
+  letter-spacing: 1.5px;
+  padding: 0px 15px 60px 0;
+  text-align: right;
+}
+/* contact  */
+.contact {
+  background-color: rgba(0, 0, 0, .5);
+  background-image: url(/Users/akimotoyumeki/Desktop/粉ーディング課題０２/img/contact-page-bgi@2x.jpg);
+}
+.contact h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  padding: 80px 0 60px 0;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.contact h1::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 120px;
+  position: absolute;
+  top: 95px;
+  right: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.contact p {
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+}
+.contact a {
+  display: block;
+  text-align: center;
+  font-family: serif;
+  font-size: 25px;
+  display: block;
+  background-color: #F7D43F;
+  border-radius: 40px;
+  border: none;
+  padding: 20px 50px;
+  margin: 70px 50px 60px 50px;
+}
+.contact h2 {
+  font-size: 40px;
+  font-family: serif;
+  color: rgba(255, 255, 255, 0.1);
+  letter-spacing: 1.5px;
+  padding: 0px 15px 60px 15px;
+  text-align: left;
+}
+footer {
+  display: block;
+  text-align: center;
+  font-family: serif;
+  padding: 30px 0;
+  font-size: 14px;
+}
+/* second  */
+.second {
+  background-color: rgba(0, 0, 0, .7);
+  background-image: url(/Users/akimotoyumeki/Desktop/粉ーディング課題０２/img/contact-bgi@2x.jpg);
+}
+.second h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  padding: 180px 0 60px 0;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.second h2 {
+  font-size: 40px;
+  font-family: serif;
+  color: rgba(255, 255, 255, 0.1);
+  letter-spacing: 1.5px;
+  padding: 50px 0;
+}
+/* third  */
+.third {
+  padding: 50px 15px;
+}
+.third form {
+  display: flex;
+  flex-direction: column;
+}
+.third h1 {
+  font-size: 20px;
+}
+.third .pp {
+  padding-bottom: 20px;
+}
+.third p {
+  padding-left: 25px;
+  padding-top: 20px;
+  position: relative;
+}
+.third p:nth-child(4){
+  padding-bottom: 30px;
+}
+.third p::before {
+  position: absolute;
+  top: 23px;
+  left: 0;
+  display: block;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: #000 1px solid;
+}
+.third input:not([type="submit"]) {
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+.third textarea {
+  padding-bottom: 100px;
+}
+.third input[type="submit"] {
+  margin: 60px 0;
+  display: block;
+  text-align: center;
+  font-family: serif;
+  font-size: 25px;
+  display: block;
+  background-color: #F7D43F;
+  border-radius: 40px;
+  border: none;
+  padding: 20px 50px;
+  margin: 70px 50px 60px 50px;
+  box-shadow: 0px 0px 10px 0 #000;
+}
+.third input[type="submit"]:active {
+  box-shadow: none;
+}
+@media(min-width:700px){
+  header {
+    /* max-width: 1280px; */
+  }
+  header .fa{
+    display: none;
+  }
+  header ul {
+    display: block;
+    display: flex;
+  }
+  header a {
+    color: #fff;
+    padding-left: 15px;
+    font-family: 'Courgette', cursive;
+    font-size: 24px;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+  .first h1 {
+    position: absolute;
+    top: 50%;
+    left: 55vh;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 70px;
+    font-family: serif;
+  }
+  .first p {
+    position: absolute;
+    top: 75%;
+    left: 32vh;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 30px;
+    font-family: serif;
+    line-height: 1.8;
+  }
+  .concept {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .concept h1 {
+    font-size: 70px;
+    padding: 120px 0 80px 0;
+  }
+  .concept h1::after {
+    width: 300px;
+    position: absolute;
+    top: 160px;
+    left: 280px;
+  }
+  .concept h2 {
+    font-size: 30px;
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .concept p {
+    padding: 40px 0;
+    line-height: 1.6;
+    margin-right: 30px;
+  }
+  .txt {
+    display: flex;
+  }
+  .txt img {
+    width: 100%;
+    margin: 0 30px;
+  }
+  .concept h3 {
+    text-align: right;
+    font-size: 90px;
+    padding: 90px 0;
+  }
+  .pics {
+    width: 100%;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .pic {
+    width: calc(100% / 3);
+  }
+  .pic:nth-child(2) {
+    margin: 0 30px;
+  }
+  .pic img {
+    width: 100%;
+  }
+  .works h1 {
+    font-size: 60px;
+    text-align: right;
+    padding-right: 17vw;
+  }
+  .works h1::after {
+    top: 110px;
+  }
+  .works h2 {
+    font-size: 90px;
+    font-family: serif;
+    color: rgba(255, 255, 255, 0.1);
+    letter-spacing: 1.5px;
+    padding: 60px 0;
+  }
+  .service h1 {
+    font-size: 90px;
+    padding: 100px 15px 80px 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .service h1::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 200px;
+    position: absolute;
+    top: 140px;
+    left: 330px;
+    background-color: rgb(0, 0, 0);
+  }
+  .images img {
+    width: 100%;
+  }
+  .images {
+    
+    display: flex;
+  }
+  .image p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 37px;
+    font-family: 'Courgette', cursive;
+  }
+  .service h2 {
+    font-size: 90px;
+    padding: 70px 15px 60px 0;
+  }
+  .contact h1 {
+    text-align: right;
+    font-size: 90px;
+    padding: 80px 250px 60px 0;
+  }
+  .contact h1::after {
+    height: 3px;
+    width: 200px;
+    top: 125px;
+    right: 15px;
+  }
+  .contact p {
+    padding-bottom: 50px;
+  }
+  .contact a {
+    font-size: 25px;
+    width: 250px;
+    padding: 20px 50px;
+    margin: 0 auto;
+  }
+  .contact h2 {
+    font-size: 90px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 15px 60px 15px;
+    text-align: left;
+  }
+  .second h1 {
+    font-size: 90px;
+  }
+  .second h2 {
+    font-size: 90px;
+    font-family: serif;
+    color: rgba(255, 255, 255, 0.1);
+    letter-spacing: 1.5px;
+    padding: 40px 0 60px 30px;
+  }
+  .third {
+    padding: 50px 15px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .third form {
+    display: flex;
+    flex-direction: column;
+  }
+  .third h1 {
+    font-size: 20px;
+  }
+  .third .pp {
+    display: flex;
+  }
+  .third p {
+    padding: 20px 25px ;
+    position: relative;
+  }
+}
